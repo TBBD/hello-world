@@ -1,5 +1,5 @@
 # hello-world
-## HelloWorld contract example for meetup on 07/06/17
+## HelloWorld contract example for meetup on 08/06/17
 
 Steps from scratch for creating and deploying a HelloWorld contract on testrpc and Rinkeby testnet
 
