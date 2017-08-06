@@ -1,9 +1,9 @@
 # hello-world
-##HelloWorld contract example for meetup on 07/06/17
+## HelloWorld contract example for meetup on 07/06/17
 
 Steps from scratch for creating and deploying a HelloWorld contract
 
-#Initial downloads
+# Initial downloads
 
 Download geth at https://geth.ethereum.org/downloads/
 
@@ -12,13 +12,13 @@ Once geth is downloaded, begin syncing the Rinkeby blockchain by opening a new t
 Download truffle `npm install -g truffle`
 
 
-#Create new directory
+# Create new directory
 `mkdir HelloWorld`
 
-##Init Truffle in Project
+## Init Truffle in Project
 `truffle init`
 
-##Remove unnecessary files
+## Remove unnecessary files
 `cd contracts/`
 `rm ConvertLib.sol && rm MetaCoin.sol`
 `cd ..`
@@ -31,12 +31,12 @@ Download truffle `npm install -g truffle`
 `rm TestMetacoin.sol && rm metacoin.js`
 `cd ..`
 
-##Create New HelloWorld contract
+## Create New HelloWorld contract
 `truffle create contract HelloWorld`
 
 See contracts/HelloWorld for code.
 
-##Create migration for HelloWorld contract
+## Create migration for HelloWorld contract
 
 `truffle create migration deploy_hello_world`
 
@@ -46,7 +46,7 @@ Current release is 3.4.5. The pull request for fix this issue will be deployed i
 
 See `migrations/1502019599_deploy_hello_world.js` for code.
 
-##Deploy contract on testrpc
+## Deploy contract on testrpc
 In terminal window downloading Rinkeby blockchain, `ctrl+C` to exit.
 
 `testrpc`
@@ -57,7 +57,7 @@ Navigate to original terminal window
 `truffle migrate --reset`
 `truffle console`
 
-##Interact with contract using testrpc
+## Interact with contract using testrpc
 Create instance of contract for easy use
 `HelloWorld.deployed().then(function(instance) { contract = instance })`
 
@@ -70,7 +70,7 @@ Set new message
 Check new message
 `contract.getMessage.call()`
 
-##Create an account with geth and get some test ether
+## Create an account with geth and get some test ether
 Exit testrpc
 `ctrl+C`
 
@@ -97,7 +97,7 @@ Click Give me ether and wait 15-30 seconds to receive ether
 Check balance in geth
 `eth.getBalance(eth.accounts[0])`
 
-##Deploy to rinkeby
+## Deploy to rinkeby
 Configure `truffle.js` for rinkeby testnet
 See `truffle.js` for configuration code.
 
@@ -113,7 +113,7 @@ Deploy to rinkeby testnet
 Wait about 1 minute to get final HelloWorld contract address
 Search for deployed contract at https://rinkeby.etherscan.io with address
 
-##Interact with contract
+## Interact with contract
 
 Get contract abi by navigating to https://ethereum.github.io/browser-solidity/
 Copy paste contract code
