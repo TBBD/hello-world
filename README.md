@@ -24,15 +24,16 @@ cd contracts/
 rm ConvertLib.sol && rm MetaCoin.sol
 cd ..
 ```
-
-`cd migrations/`
-`rm 2_deploy_contracts.js`
-`cd ..`
-
-`cd test/`
-`rm TestMetacoin.sol && rm metacoin.js`
-`cd ..`
-
+```
+cd migrations/
+rm 2_deploy_contracts.js
+cd ..
+```
+```
+cd test/
+rm TestMetacoin.sol && rm metacoin.js
+cd ..
+```
 ## Create New HelloWorld contract
 `truffle create contract HelloWorld`
 
@@ -55,10 +56,11 @@ In terminal window downloading Rinkeby blockchain, `ctrl+C` to exit.
 
 Navigate to original terminal window
 
-`truffle compile`
-`truffle migrate --reset`
-`truffle console`
-
+```
+truffle compile
+truffle migrate --reset
+truffle console
+```
 ## Interact with contract using testrpc
 Create instance of contract for easy use
 `HelloWorld.deployed().then(function(instance) { contract = instance })`
@@ -122,9 +124,10 @@ Copy paste contract code
 On the right click contract details and copy the interface JSON
 
 Navigate to geth console again
-`abi = <interface JSON>`
-`contract = eth.contract(abi)`
-
+```
+abi = <interface JSON>
+contract = eth.contract(abi)
+```
 Copy the HelloWorld contract address from the migration
 `instance = contract.at("address")`
 
