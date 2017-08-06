@@ -3,7 +3,7 @@
 
 Steps from scratch for creating and deploying a HelloWorld contract
 
-# Initial downloads
+## Initial downloads
 
 Download geth at https://geth.ethereum.org/downloads/
 
@@ -12,7 +12,7 @@ Once geth is downloaded, begin syncing the Rinkeby blockchain by opening a new t
 Download truffle `npm install -g truffle`
 
 
-# Create new directory
+## Create new directory
 `mkdir HelloWorld`
 
 ## Init Truffle in Project
