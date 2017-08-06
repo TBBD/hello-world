@@ -1,7 +1,7 @@
 # hello-world
 ## HelloWorld contract example for meetup on 07/06/17
 
-Steps from scratch for creating and deploying a HelloWorld contract
+Steps from scratch for creating and deploying a HelloWorld contract on testrpc and Rinkeby testnet
 
 ## Initial downloads
 
@@ -13,7 +13,7 @@ Download truffle `npm install -g truffle`
 
 
 ## Create new directory
-`mkdir HelloWorld`
+`mkdir HelloWorld && cd HelloWorld`
 
 ## Init Truffle in Project
 `truffle init`
@@ -23,13 +23,9 @@ Download truffle `npm install -g truffle`
 cd contracts/
 rm ConvertLib.sol && rm MetaCoin.sol
 cd ..
-```
-```
 cd migrations/
 rm 2_deploy_contracts.js
 cd ..
-```
-```
 cd test/
 rm TestMetacoin.sol && rm metacoin.js
 cd ..
@@ -37,7 +33,7 @@ cd ..
 ## Create New HelloWorld contract
 `truffle create contract HelloWorld`
 
-See contracts/HelloWorld for code.
+See `contracts/HelloWorld` for code.
 
 ## Create migration for HelloWorld contract
 
