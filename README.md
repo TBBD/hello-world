@@ -19,9 +19,11 @@ Download truffle `npm install -g truffle`
 `truffle init`
 
 ## Remove unnecessary files
-`cd contracts/`
-`rm ConvertLib.sol && rm MetaCoin.sol`
-`cd ..`
+```
+cd contracts/
+rm ConvertLib.sol && rm MetaCoin.sol
+cd ..
+```
 
 `cd migrations/`
 `rm 2_deploy_contracts.js`
