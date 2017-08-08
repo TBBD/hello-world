@@ -130,6 +130,9 @@ Copy the HelloWorld contract address from the migration
 Check deployed message
 `instance.getMessage.call()`
 
+Unlock account
+`personal.unlockAccount("<address>")`
+
 Change message
 `instance.setMessage("Welcome to TBBG!", {from: eth.accounts[0]})`
 
