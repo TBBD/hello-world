@@ -75,7 +75,7 @@ Exit testrpc
 `ctrl+C`
 
 Run geth on rinkeby again but with additional commands
-`geth rinkeby --rpc --rpcapi web3,db,personal,eth,net`
+`geth --rinkeby --rpc --rpcapi web3,db,personal,eth,net`
 
 Retrieve ipc filepath from rinkeby startup information
 Will look like `INFO [08-06|08:06:14] IPC endpoint opened: <path>`
@@ -131,7 +131,7 @@ Check deployed message
 `instance.getMessage.call()`
 
 Change message
-`instance.setMessage("Welcome to TBBG!")`
+`instance.setMessage("Welcome to TBBG!", {from: eth.accounts[0]})`
 
 Wait 15-30 seconds for transaction to get mined
 Check deployed message
