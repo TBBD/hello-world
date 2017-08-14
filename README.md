@@ -1,7 +1,7 @@
 # hello-world
 ## HelloWorld contract example for meetup on 08/06/17
 
-Steps from scratch for creating and deploying a HelloWorld contract on testrpc and Rinkeby testnet
+Steps from scratch for creating and deploying a HelloWorld contract on testrpc and Rinkeby testnet. Video at https://www.youtube.com/watch?v=nqw4FeYQBxc.
 
 ## Initial downloads
 
@@ -134,7 +134,7 @@ Unlock account
 `personal.unlockAccount("<address>")`
 
 Change message
-`instance.setMessage("Welcome to TBBG!", {from: eth.accounts[0]})`
+`instance.setMessage("Welcome to TBBD!", {from: eth.accounts[0]})`
 
 Wait 15-30 seconds for transaction to get mined
 Check deployed message
