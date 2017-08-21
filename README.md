@@ -123,9 +123,8 @@ Navigate to geth console again
 ```
 abi = <interface JSON>
 contract = eth.contract(abi)
+instance = contract.at("address")
 ```
-Copy the HelloWorld contract address from the migration
-`instance = contract.at("address")`
 
 Check deployed message
 `instance.getMessage.call()`
