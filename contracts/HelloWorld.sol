@@ -4,7 +4,7 @@ contract HelloWorld {
   string private message;
   function HelloWorld() {
     // constructor
-    message = "hello world";
+    message = "h";
   }
 
   function setMessage (string newMessage) {
